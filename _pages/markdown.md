@@ -28,7 +28,7 @@ in official DeepInsight InsightFace
 This repository provides source code for building face recognition REST
 API and converting models to ONNX and TensorRT using Docker.
 
-![Draw detections example](https://github.com/Asher-1/Asher-1.github.io/blob/main/images/draw_detections.jpg)
+![Draw detections example](https://Asher-1.github.io/images/draw_detections.jpg)
 
 
 ## Key features:
@@ -109,7 +109,7 @@ API and converting models to ONNX and TensorRT using Docker.
    
 ## ErowCloudViewer: A Modern System for 3D Data Processing
 
-![ErowCloudViewer UI](https://github.com/Asher-1/Asher-1.github.io/blob/main/images/ErowCloudViewerMainUI.png)
+![ErowCloudViewer UI](https://Asher-1.github.io/images/ErowCloudViewerMainUI.png)
 
 ### ErowCloudViewer/version3.7.0
 
