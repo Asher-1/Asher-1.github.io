@@ -1,10 +1,10 @@
 ---
-permalink: /markdown/
+permalink: /resource/
 title: "Resource"
 author_profile: true
 redirect_from: 
   - /md/
-  - /markdown.html
+  - /resource.html
 ---
 
 ## Tips and hints

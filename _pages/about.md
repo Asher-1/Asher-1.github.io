@@ -47,4 +47,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring Asher-1 can be found in [the guide](https://Asher-1.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring Asher-1 can be found in [the resource](https://Asher-1.github.io/resource/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
