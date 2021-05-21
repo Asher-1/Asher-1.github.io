@@ -7,21 +7,6 @@ redirect_from:
   - /markdown.html
 ---
 
-## Locations of key files/directories
-
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
-
 ## Tips and hints
 
 * Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
@@ -43,7 +28,7 @@ in official DeepInsight InsightFace
 This repository provides source code for building face recognition REST
 API and converting models to ONNX and TensorRT using Docker.
 
-![Draw detections example](misc/images/draw_detections.jpg)
+![Draw detections example](https://asher-1.github.io/images/draw_detections.jpg)
 
 
 ## Key features:
@@ -86,19 +71,20 @@ API and converting models to ONNX and TensorRT using Docker.
 
 ### Detection:
 
-| Model                 | Auto download | Inference code | Source                                                                                          |
-|:----------------------|:--------------|:---------------|:------------------------------------------------------------------------------------------------|
-| retinaface_r50_v1     | Yes         | Yes            | [download](https://asher-1.github.io/files/models/retinaface_r50_v1.zip)       |
-| retinaface_mnet025_v1 | Yes           | Yes            | [download](https://asher-1.github.io/files/models/retinaface_mnet025_v1.zip)       |
-| retinaface_mnet025_v2 | Yes         | Yes            | [download](https://asher-1.github.io/files/models/retinaface_mnet025_v2.zip)       |
+| Model                 | Auto download | Inference code | Source                                                              |
+|:----------------------|:--------------|:---------------|:--------------------------------------------------------------|
+| retinaface_r50_v1     | Yes         | Yes            | [retinaface_r50_v1](https://asher-1.github.io/files/models/retinaface_r50_v1.zip) |
+| retinaface_mnet025_v1 | Yes           | Yes            | [retinaface_mnet025_v1](https://asher-1.github.io/files/models/retinaface_mnet025_v1.zip) |
+| retinaface_mnet025_v2 | Yes         | Yes            | [retinaface_mnet025_v2](https://asher-1.github.io/files/models/retinaface_mnet025_v2.zip) |
 | mnet_cov2             | No            | Yes            | [mnet_cov2](https://github.com/deepinsight/insightface/tree/master/detection/RetinaFaceAntiCov) |
 | centerface            | Yes           | Yes            | [Star-Clouds/CenterFace](https://github.com/Star-Clouds/CenterFace)                             |
 | scrfd_10g_bnkps       | No            | Yes            | [SCRFD](https://github.com/deepinsight/insightface/tree/master/detection/scrfd)                 |
+
 ### Recognition:
 
 | Model                  | Auto download | Inference code | Source                                                       |
 | :--------------------- | :------------ | :------------- | :----------------------------------------------------------- |
-| arcface_r100_v1        | Yes           | Yes            | [download](https://asher-1.github.io/files/models/arcface_r100_v1.zip) |
+| arcface_r100_v1        | Yes           | Yes            | [arcface_r100_v1](https://asher-1.github.io/files/models/arcface_r100_v1.zip) |
 | r100-arcface-msfdrop75 | No            | Yes            | [SubCenter-ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/SubCenter-ArcFace) |
 | r50-arcface-msfdrop75  | No            | Yes            | [SubCenter-ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/SubCenter-ArcFace) |
 | glint360k_r100FC_1.0   | No            | Yes            | [Partial-FC](https://github.com/deepinsight/insightface/tree/master/recognition/partial_fc) |
@@ -109,19 +95,21 @@ API and converting models to ONNX and TensorRT using Docker.
 
 | Model        | Auto download | Inference code | Source                                                       |
 | :----------- | :------------ | :------------- | :----------------------------------------------------------- |
-| genderage_v1 | Yes           | Yes            | [download](https://asher-1.github.io/files/models/genderage_v1.zip) |
+| genderage_v1 | Yes           | Yes            | [genderage_v1](https://asher-1.github.io/files/models/genderage_v1.zip) |
 | 2d106det     | No            | No             | [coordinateReg](https://github.com/deepinsight/insightface/tree/master/alignment/coordinateReg) |
-
-> `*` - please refer to important notice at the top of the page
 
 ## Requirements:
 
 1. Docker
+
 2. Nvidia-container-toolkit
+
 3. Nvidia GPU drivers (460.x.x and above)
 
-
+   
 ## ErowCloudViewer: A Modern System for 3D Data Processing
+
+![ErowCloudViewer UI](https://asher-1.github.io/images/ErowCloudViewerMainUI.png)
 
 ### version3.7.0
 
@@ -137,6 +125,22 @@ API and converting models to ONNX and TensorRT using Docker.
 | [CloudViewer](https://asher-1.github.io/files/version3.7.0/cloudViewer-0.3.7-cp36-cp36m-manylinux1_x86_64.whl)     | 2020-12-07  |  python3.6    manylinux1_x86_64            |
 | [CloudViewer](https://asher-1.github.io/files/version3.7.0/cloudViewer-0.3.7-cp37-cp37m-manylinux1_x86_64.whl)     | 2020-12-07  |  python3.7    manylinux1_x86_64            |
 | [CloudViewer](https://asher-1.github.io/files/version3.7.0/cloudViewer-0.3.7-cp38-cp38-manylinux1_x86_64.whl)     | 2020-12-07  |  python3.8   manylinux1_x86_64            |
+
+
+## Locations of key files/directories
+
+* Basic config options: _config.yml
+* Top navigation bar config: _data/navigation.yml
+* Single pages: _pages/
+* Collections of pages are .md or .html files in:
+  * _publications/
+  * _portfolio/
+  * _posts/
+  * _teaching/
+  * _talks/
+* Footer: _includes/footer.html
+* Static files (like PDFs): /files/
+* Profile image (can set in _config.yml): images/profile.png
 
 
 ## Definition Lists
