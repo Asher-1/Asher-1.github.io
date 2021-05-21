@@ -111,7 +111,7 @@ API and converting models to ONNX and TensorRT using Docker.
 
 ![ErowCloudViewer UI](https://Asher-1.github.io/images/ErowCloudViewerMainUI.png)
 
-### ErowCloudViewer/version3.7.0
+### version3.7.0
 
 | Entry            | Item   |                                                              |
 | --------         | ------ | ------------------------------------------------------------ |
