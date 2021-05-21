@@ -25,52 +25,119 @@ redirect_from:
 ## Tips and hints
 
 * Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
+* Go to the [commit list](https://github.com/Asher-1/Asher-1.github.io/commits/main) (on your repo) to find the last version Github built with Jekyll. 
   * Green check: successful build
   * Orange circle: building
   * Red X: error
   * No icon: not built
 
+This repository aims to provide convenient, easy deployable and scalable
+REST API for InsightFace face detection and recognition pipeline using
+FastAPI for serving and NVIDIA TensorRT for optimized inference.
+
+Code is heavily based on API
+[code](https://github.com/deepinsight/insightface/tree/master/python-package)
+in official DeepInsight InsightFace
+[repository](https://github.com/deepinsight/insightface).
+
+This repository provides source code for building face recognition REST
+API and converting models to ONNX and TensorRT using Docker.
+
+![Draw detections example](misc/images/draw_detections.jpg)
+
+
+## Key features:
+
+- Ready for deployment on NVIDIA GPU enabled systems using Docker and
+  nvidia-docker2.
+- Fully automatic model bootstrapping, including downloading and
+  MXnet->ONNX->TensorRT conversion of official DeepInsight InsightFace
+  models.
+- Up to 3x performance boost over MXNet inference with help of TensorRT
+  optimizations, FP16 inference and batch inference of detected faces
+  with ArcFace model.
+- Inference on CPU with ONNX-Runtime.
+
+## Contents
+
+[List of supported models](#list-of-supported-models)
+- [Detection](#detection)
+- [Recognition](#recognition)
+- [Other](#other)
+
+[Prerequesites](#prerequesites)
+
+[Running with Docker](#running-with-docker)
+
+[API usage](#api-usage)
+- [/extract](#extract-endpoint)
+
+[Work in progress](#work-in-progress)
+
+[Known issues](#known-issues)
+
+[Changelog](#changelog)
+
+
 ## Resources
  * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
 
-## Markdown guide
+## List of supported models:
 
-### Header three
+### Detection:
 
-#### Header four
+| Model                 | Auto download | Inference code | Source                                                                                          |
+|:----------------------|:--------------|:---------------|:------------------------------------------------------------------------------------------------|
+| retinaface_r50_v1     | Yes         | Yes            | [download](https://asher-1.github.io/files/models/retinaface_r50_v1.zip)       |
+| retinaface_mnet025_v1 | Yes           | Yes            | [download](https://asher-1.github.io/files/models/retinaface_mnet025_v1.zip)       |
+| retinaface_mnet025_v2 | Yes         | Yes            | [download](https://asher-1.github.io/files/models/retinaface_mnet025_v2.zip)       |
+| mnet_cov2             | No            | Yes            | [mnet_cov2](https://github.com/deepinsight/insightface/tree/master/detection/RetinaFaceAntiCov) |
+| centerface            | Yes           | Yes            | [Star-Clouds/CenterFace](https://github.com/Star-Clouds/CenterFace)                             |
+| scrfd_10g_bnkps       | No            | Yes            | [SCRFD](https://github.com/deepinsight/insightface/tree/master/detection/scrfd)                 |
+### Recognition:
 
-##### Header five
+| Model                  | Auto download | Inference code | Source                                                       |
+| :--------------------- | :------------ | :------------- | :----------------------------------------------------------- |
+| arcface_r100_v1        | Yes           | Yes            | [download](https://asher-1.github.io/files/models/arcface_r100_v1.zip) |
+| r100-arcface-msfdrop75 | No            | Yes            | [SubCenter-ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/SubCenter-ArcFace) |
+| r50-arcface-msfdrop75  | No            | Yes            | [SubCenter-ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/SubCenter-ArcFace) |
+| glint360k_r100FC_1.0   | No            | Yes            | [Partial-FC](https://github.com/deepinsight/insightface/tree/master/recognition/partial_fc) |
+| glint360k_r100FC_0.1   | No            | Yes            | [Partial-FC](https://github.com/deepinsight/insightface/tree/master/recognition/partial_fc) |
+| glintr100              | No            | Yes            | [Arcface-torch](https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch) |
 
-###### Header six
+### Other:
 
-## Blockquotes
+| Model        | Auto download | Inference code | Source                                                       |
+| :----------- | :------------ | :------------- | :----------------------------------------------------------- |
+| genderage_v1 | Yes           | Yes            | [download](https://asher-1.github.io/files/models/genderage_v1.zip) |
+| 2d106det     | No            | No             | [coordinateReg](https://github.com/deepinsight/insightface/tree/master/alignment/coordinateReg) |
 
-Single line blockquote:
+> `*` - please refer to important notice at the top of the page
 
-> Quotes are cool.
+## Requirements:
 
-## Tables
+1. Docker
+2. Nvidia-container-toolkit
+3. Nvidia GPU drivers (460.x.x and above)
 
-### Table 1
+
+## ErowCloudViewer: A Modern System for 3D Data Processing
+
+### version3.7.0
 
 | Entry            | Item   |                                                              |
 | --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
+| [ErowCloudViewer](https://asher-1.github.io/files/version3.7.0/ErowCloudViewer-3.7.0-2020-12-07-win-amd64.exe)    | 2020-12-07   | Windows 64bits                          |
+| [CloudViewer](https://asher-1.github.io/files/version3.7.0/CloudViewer-0.3.7-2020-12-07-win-amd64.exe)    | 2020-12-07   | Windows 64bits                           |
+| [ErowCloudViewer](https://asher-1.github.io/files/version3.7.0/ErowCloudViewer-3.7.0-2020-12-15-linux-amd64.run)     | 2020-12-05   | Linux  64bits (Ubuntu18.04)                 |
+| [CloudViewer](https://asher-1.github.io/files/version3.7.0/CloudViewer-x86_64-0.3.7-linux.run)     | 2020-12-05  | Linux  64bits (Ubuntu18.04)                 |
+| [CloudViewer](https://asher-1.github.io/files/version3.7.0/cloudViewer-0.3.7-cp36-cp36m-win_amd64.whl)     | 2020-12-07  |  python3.6    win_arm64             |
+| [CloudViewer](https://asher-1.github.io/files/version3.7.0/cloudViewer-0.3.7-cp37-cp37m-win_amd64.whl)     | 2020-12-07  |  python3.7    win_arm64             |
+| [CloudViewer](https://asher-1.github.io/files/version3.7.0/cloudViewer-0.3.7-cp38-cp38-win_amd64.whl)     | 2020-12-07  |  python3.8    win_arm64             |
+| [CloudViewer](https://asher-1.github.io/files/version3.7.0/cloudViewer-0.3.7-cp36-cp36m-manylinux1_x86_64.whl)     | 2020-12-07  |  python3.6    manylinux1_x86_64            |
+| [CloudViewer](https://asher-1.github.io/files/version3.7.0/cloudViewer-0.3.7-cp37-cp37m-manylinux1_x86_64.whl)     | 2020-12-07  |  python3.7    manylinux1_x86_64            |
+| [CloudViewer](https://asher-1.github.io/files/version3.7.0/cloudViewer-0.3.7-cp38-cp38-manylinux1_x86_64.whl)     | 2020-12-07  |  python3.8   manylinux1_x86_64            |
 
-### Table 2
-
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
 
 ## Definition Lists
 
