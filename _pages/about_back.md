@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /about/
 title: "Asher-1 is a ready-to-fork GitHub Pages template for personal websites"
 excerpt: "About me"
 author_profile: true
