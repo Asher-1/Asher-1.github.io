@@ -13,7 +13,7 @@ redirect_from:
 
 ## 联系方式
 
-| [GitHub](htttps://github.com/Asher-1) | [Twitter](https://twitter.com/dahailu) | [Email](ludahai19@163.com) | [Website](https://Asher-1.github.io) | [Wechat](https://Asher-1.github.io/images/wechat.jpg) | [Facebook](https://www.patreon.com/timqian) |
+| [GitHub](https://github.com/Asher-1) | [Twitter](https://twitter.com/dahailu) | [Email](ludahai19@163.com) | [Website](https://Asher-1.github.io) | [Wechat](https://Asher-1.github.io/images/wechat.jpg) | [Facebook](https://www.facebook.com/dahailu) |
 
 ## <img src="https://Asher-1.github.io/assets/fonts/graduation-cap-solid.svg" width="30px"> 教育经历
 
