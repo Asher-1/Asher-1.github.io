@@ -71,7 +71,6 @@ API and converting models to ONNX and TensorRT using Docker.
 
 ### Detection:
 
-
 | Model                 | Auto download | Inference code | Source                      | ONNX File |
 |:----------------------|:-------------:|:--------------:|:----------------------------|:---------:|
 | retinaface_r50_v1     | Yes           | Yes            | [official package][l1]      |[link][dl1]|
@@ -92,6 +91,7 @@ API and converting models to ONNX and TensorRT using Docker.
 | glint360k_r100FC_1.0   | No            | Yes            | [Partial-FC][6]        | None       |
 | glint360k_r100FC_0.1   | No            | Yes            | [Partial-FC][6]        | None       |
 | glintr100              | Yes           | Yes            | [official package][l7] |[link][dl13]|
+
 ### Other:
 
 | Model        | Auto download | Inference code | Source                 | ONNX File  |
