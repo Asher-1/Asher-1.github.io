@@ -71,6 +71,7 @@ API and converting models to ONNX and TensorRT using Docker.
 
 ### Detection:
 
+
 | Model                 | Auto download | Inference code | Source                      | ONNX File |
 |:----------------------|:-------------:|:--------------:|:----------------------------|:---------:|
 | retinaface_r50_v1     | Yes           | Yes            | [official package][l1]      |[link][dl1]|
@@ -78,7 +79,7 @@ API and converting models to ONNX and TensorRT using Docker.
 | retinaface_mnet025_v2 | Yes           | Yes            | [official package][l3]      |[link][dl3]|
 | mnet_cov2             | No            | Yes            | [mnet_cov2][2]              |[link][dl4]|
 | centerface            | Yes           | Yes            | [Star-Clouds/CenterFace][3] |[link][dl5]|
-| scrfd_10g_bnkps       | No            | Yes            | [SCRFD][4]                  |[link][dl6]|
+| scrfd_10g_bnkps       | Yes           | Yes            | [SCRFD][l6]                 |[link][dl6]|
 | scrfd_2.5g_bnkps      | No            | Yes            | [SCRFD][4]                  |[link][dl7]|
 
 ### Recognition:
@@ -90,7 +91,7 @@ API and converting models to ONNX and TensorRT using Docker.
 | r50-arcface-msfdrop75  | No            | Yes            | [SubCenter-ArcFace][5] | None       |
 | glint360k_r100FC_1.0   | No            | Yes            | [Partial-FC][6]        | None       |
 | glint360k_r100FC_0.1   | No            | Yes            | [Partial-FC][6]        | None       |
-| glintr100              | No            | Yes            | [official package][1]  |[link][dl13]|
+| glintr100              | Yes           | Yes            | [official package][l7] |[link][dl13]|
 ### Other:
 
 | Model        | Auto download | Inference code | Source                 | ONNX File  |
@@ -99,11 +100,14 @@ API and converting models to ONNX and TensorRT using Docker.
 | 2d106det     | No            | No             | [coordinateReg][8]     | None       |
 
 
+[1]: https://github.com/deepinsight/insightface/tree/master/python-package
 [l1]: https://github.com/Asher-1/Asher-1.github.io/blob/main/files/models/retinaface_r50_v1.zip?raw=true
 [l2]: https://github.com/Asher-1/Asher-1.github.io/blob/main/files/models/retinaface_mnet025_v1.zip?raw=true
 [l3]: https://github.com/Asher-1/Asher-1.github.io/blob/main/files/models/retinaface_mnet025_v2.zip?raw=true
 [l4]: https://github.com/Asher-1/Asher-1.github.io/blob/main/files/models/arcface_r100_v1.zip?raw=true
 [l5]: https://github.com/Asher-1/Asher-1.github.io/blob/main/files/models/genderage_v1.zip?raw=true
+[l6]: https://github.com/Asher-1/Asher-1.github.io/blob/main/files/models/antelope/scrfd_10g_bnkps.onnx?raw=true
+[l7]: https://github.com/Asher-1/Asher-1.github.io/blob/main/files/models/antelope/glintr100.onnx?raw=true
 [2]: https://github.com/deepinsight/insightface/tree/master/detection/RetinaFaceAntiCov
 [3]: https://github.com/Star-Clouds/CenterFace
 [4]: https://github.com/deepinsight/insightface/tree/master/detection/scrfd
