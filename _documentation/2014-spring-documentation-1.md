@@ -2,7 +2,7 @@
 title: "Documentation experience 1"
 collection: documentation
 type: "Undergraduate course"
-permalink: /doc/2014-spring-documentation-1
+permalink: /docs/2014-spring-documentation-1
 venue: "University 1, Department"
 date: 2014-01-01
 location: "City, Country"
