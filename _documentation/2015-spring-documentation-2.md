@@ -2,7 +2,7 @@
 title: "Documentation experience 2"
 collection: documentation
 type: "Workshop"
-permalink: /documentation/2015-spring-documentation-1
+permalink: /doc/2015-spring-documentation-1
 venue: "University 1, Department"
 date: 2015-01-01
 location: "City, Country"
