@@ -165,8 +165,8 @@ API and converting models to ONNX and TensorRT using Docker.
   * _publications/
   * _portfolio/
   * _posts/
-  * _teaching/
-  * _talks/
+  * _documentation/
+  * _downloads/
 * Footer: _includes/footer.html
 * Static files (like PDFs): /files/
 * Profile image (can set in _config.yml): images/profile.png

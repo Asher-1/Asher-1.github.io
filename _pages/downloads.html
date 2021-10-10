@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Downloads and presentations"
+permalink: /downloads/
+author_profile: true
+---
+
+{% if site.talkmap_link == true %}
+
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a download!</a></p>
+
+{% endif %}
+
+{% for post in site.downloads reversed %}
+  {% include archive-single-download.html %}
+{% endfor %}
